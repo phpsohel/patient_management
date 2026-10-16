@@ -1,14 +1,8 @@
 
 <x-app-layout>
-    <x-slot name="header">
-        <div class="flex items-center justify-between">
-            <h2 class="text-xl font-bold text-gray-800">
-                Dashboard
-            </h2>
-        </div>
-    </x-slot>
 
-    <div class="bg-gray-100">
+
+    <div class="">
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
 
             <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
@@ -20,15 +14,7 @@
                     </h3>
 
                     <nav class="space-y-2">
-                        <a href="{{ route('dashboard') }}"
-                           class="flex items-center gap-3 rounded-lg
-                           px-4 py-3 text-sm font-medium
-                           {{ request()->routeIs('dashboard')
-                               ? 'bg-indigo-600 text-white'
-                               : 'text-slate-300 hover:bg-slate-800' }}">
-                            <span>▦</span>
-                            Dashboard
-                        </a>
+
 
                         <p class="px-4 pb-1 pt-5 text-xs uppercase
                                   tracking-wider text-slate-400">

@@ -8,6 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('patients', PatientController::class);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
